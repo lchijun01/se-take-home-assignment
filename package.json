@@ -1,0 +1,25 @@
+{
+  "name": "se-take-home-assignment",
+  "version": "1.0.0",
+  "description": "Below is a take home assignment before the interview of the position. You are required to\r 1. Understand the situation and use case. You may contact the interviewer for further clarification.\r 2. Fork this repo and implement the requirement with your most familiar tools.\r 3. Complete the requirement and perform your own testing.\r 4. Provide documentation for the any part that you think is needed.\r 5. Commit into your own github and share your repo with the interviewer.\r 6. Bring the source code and functioning prototype to the interview session.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feedmepos/se-take-home-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feedmepos/se-take-home-assignment/issues"
+  },
+  "homepage": "https://github.com/feedmepos/se-take-home-assignment#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}

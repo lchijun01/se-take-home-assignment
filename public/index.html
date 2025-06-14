@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>McDonald's Order Bot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light p-4">
+  <div class="container">
+    <h1 class="text-center mb-4">🍔 McDonald's Order Bot</h1>
+    <div class="d-flex justify-content-center gap-2 mb-4">
+      <button class="btn btn-secondary" onclick="newOrder('Normal')">New Normal Order</button>
+      <button class="btn btn-warning" onclick="newOrder('VIP')">New VIP Order</button>
+      <button class="btn btn-success" onclick="addBot()">+ Bot</button>
+      <button class="btn btn-danger" onclick="removeBot()">- Bot</button>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class="text-primary">Pending Orders</h4>
+        <ul class="list-group" id="pending"></ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-success">Completed Orders</h4>
+        <ul class="list-group" id="completed"></ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-info">Bots</h4>
+        <ul class="list-group" id="bots"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
